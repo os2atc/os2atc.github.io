@@ -65,6 +65,7 @@
 * 2021年12月26日 中国科学院软件研究所  
 * 议程安排：<https://www.bagevent.com/event/7946359>
 * 直播回放：<https://live.csdn.net/room/csdnnews/RH4YIjic>
+* 现场图片：<https://live.photoplus.cn/live/24495645?accessFrom=live>
 
 ### 官网链接
 * 开源操作系统社区 [https://os2edu.cn](https://os2edu.cn)
