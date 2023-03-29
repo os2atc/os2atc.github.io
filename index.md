@@ -56,10 +56,12 @@
 ### 第七届开源操作系统年度技术会议
 * 2019年12月14日 深圳鹏城实验室  
 * 议程安排：<https://bss.csdn.net/m/topic/os2atc>
+* 直播回放：<https://live.maodoulive.com/column/description/5ffFZFxCp6xBsCbmq>
 
 ### 第八届开源操作系统年度技术会议
 * 2020年12月27日 中国科学院计算研究所  
 * 议程安排：<https://www.bagevent.com/event/7009160>
+* 直播回放：<https://live.maodoulive.com/column/description/5magXFpijkmnRrqst>
 
 ### 第九届开源操作系统年度技术会议
 * 2021年12月26日 中国科学院软件研究所  
