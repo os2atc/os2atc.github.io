@@ -66,4 +66,4 @@
 * 开源操作系统社区 [https://os2edu.cn](https://os2edu.cn)
 
 ---
-<https://os2edu.cn> 京ICP备16045052号-11
+<https://os2atc.cn> 京ICP备16045052号-11
