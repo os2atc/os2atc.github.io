@@ -1,5 +1,31 @@
 ## 开源操作系统年度技术会议 OS2ATC
-开源操作系统年度技术会议历年网站（2013 - 2021） 
+
+### 第十届开源操作系统年度技术会议（OS2ATC）
+* 议程安排：
+https://www.bagevent.com/event/7951632/p/513655
+
+* 主会场：
+https://live.csdn.net/room/Hansen666666/wIIp8dGq
+
+* 分会场1: 硬件
+https://live.csdn.net/room/Hansen666666/XI0M2K3D
+
+* 分会场2: AIoT、内核
+https://live.csdn.net/room/csdnlive1/NlKJ5nUA
+
+* 分会场3: 汽车软件
+https://live.csdn.net/room/csdnlive2/8snH6uSt
+
+* 分会场4: 编程技术
+https://live.csdn.net/room/csdnlive3/zvPgAjXl
+
+* 分会场5: 云原生、虚拟化
+https://live.csdn.net/room/csdnlive4/7BJxlsBo
+
+* 现场图片直播：
+https://live.photoplus.cn/live/39662692
+
+## 开源操作系统年度技术会议历年网站（2013 - 2021） 
 
 ### 第一届开源操作系统年度技术会议
 * 2013年 未找到相关网站信息
