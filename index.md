@@ -67,10 +67,16 @@
 * 2021年12月26日 中国科学院软件研究所  
 * 议程安排：<https://www.bagevent.com/event/7946359>
 * 直播回放：<https://live.csdn.net/room/csdnnews/RH4YIjic>
-* 现场图片：<https://live.photoplus.cn/live/24495645?accessFrom=live>
+* 现场图片：<https://live.photoplus.cn/live/24495645>
 
-### 官网链接
-* 开源操作系统社区 [https://os2edu.cn](https://os2edu.cn)
+### 第十届开源操作系统年度技术会议
+* 2023年3月26日 北京市海淀区西郊宾馆1号楼 
+* 议程安排：<https://www.bagevent.com/event/7951632/p/513655>
+* 直播回放：<https://live.csdn.net/room/Hansen666666/wIIp8dGq>
+* 现场图片：<https://live.photoplus.cn/live/39662692>
+
+### 开源操作系统社区
+* OS2EDU 学习社区 [https://os2edu.cn](https://os2edu.cn)
 
 ---
 <https://os2atc.cn> 京ICP备16045052号-11
