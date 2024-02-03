@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="zh_hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>往期回顾 - OS2ATC</title>
+  <meta name="description" content="开源操作系统年度技术会议（Open Source Operating System Annual Technical Conference，简称 OS2ATC）自2013年以来，已经连续举办了十余届，在促进我国操作系统相关教学、研究与产业的发展，加强学术交流，展示产业界成果，展开跨学科的交流等方面已经卓有成效。">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="icon" href="https://os2atc-1304601764.cos.ap-beijing.myqcloud.com/img/favicon.ico">
+</head>
+<body class="bg-gradient-to-b from-purple-500 to-purple-600">
+
+  <header class="bg-white bg-opacity-90 sticky top-0 shadow-lg z-50">
+    <nav id="nav" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <div class="flex lg:flex-1">
+        <a href="index.html" class="-m-1.5 p-1.5">
+          <span class="sr-only">OS2ATC</span>
+          <img class="h-8 md:h-12 w-auto" src="https://os2atc-1304601764.cos.ap-beijing.myqcloud.com/img/logo-all.png" alt="">
+        </a>
+      </div>
+      <div class="flex lg:hidden">
+        <button id="mobile-menu-icon" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+          <span class="sr-only">Open main menu</span>
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+      <div class="hidden lg:flex lg:gap-x-12">
+        <div class="relative">
+          <button type="button" id="menu-item-reference" class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white bg-purple-500 hover:bg-purple-700 rounded-full px-2" aria-expanded="false">
+            我要参会
+            <svg class="h-5 w-5 flex-none text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+            </svg>
+          </button>
+
+          <!--
+            'Product' flyout menu, show/hide based on flyout menu state.
+
+            Entering: "transition ease-out duration-200"
+              From: "opacity-0 translate-y-1"
+              To: "opacity-100 translate-y-0"
+            Leaving: "transition ease-in duration-150"
+              From: "opacity-100 translate-y-0"
+              To: "opacity-0 translate-y-1"
+          -->
+          <div id="menu-item-reference-data" class="hidden absolute -left-8 top-full z-10 mt-3 w-screen max-w-40 overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+            <div class="p-4">
+              <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                <div class="flex-auto">
+                  <a href="https://www.huodongxing.com/event/7737808971000?td=8985099715599" class="block font-semibold text-gray-900">
+                    OS2ATC 2024
+                    <span class="absolute inset-0"></span>
+                  </a>
+                </div>
+              </div>
+              <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 bg-gray-50">
+                <div class="flex-auto">
+                  <a href="./conference.html" class="block font-semibold text-gray-900">
+                    往期回顾
+                    <span class="absolute inset-0"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="./award.html" class="text-sm font-semibold leading-6 text-gray-900">开源创新先锋奖</a>
+
+        <div class="relative">
+          <button type="button" id="menu-item-resource" class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900" aria-expanded="false">
+            资源中心
+            <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+            </svg>
+          </button>
+
+          <!--
+            'Product' flyout menu, show/hide based on flyout menu state.
+
+            Entering: "transition ease-out duration-200"
+              From: "opacity-0 translate-y-1"
+              To: "opacity-100 translate-y-0"
+            Leaving: "transition ease-in duration-150"
+              From: "opacity-100 translate-y-0"
+              To: "opacity-0 translate-y-1"
+          -->
+          <div id="menu-item-resource-data" class="hidden absolute -left-8 top-full z-10 mt-3 w-screen max-w-40 overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+            <div class="p-4">
+              <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                <div class="flex-auto">
+                  <a href="https://cloud.tsinghua.edu.cn/d/8e6c77ad1ad548acb909/" class="block font-semibold text-gray-900">
+                    PPT下载
+                    <span class="absolute inset-0"></span>
+                  </a>
+                </div>
+              </div>
+              <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                <div class="flex-auto">
+                  <a href="https://space.bilibili.com/503707556" class="block font-semibold text-gray-900">
+                    视频回顾
+                    <span class="absolute inset-0"></span>
+                  </a>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <a href="./contact.html" class="text-sm font-semibold leading-6 text-gray-900">联系我们</a>
+      </div>
+    </nav>
+    <!-- Mobile menu, show/hide based on menu open state. -->
+    <div id="mobile-menu" class="hidden" role="dialog" aria-modal="true">
+      <!-- Background backdrop, show/hide based on slide-over state. -->
+      <div class="fixed inset-0 z-10"></div>
+      <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div class="flex items-center justify-between">
+          <a href="./index.html" class="-m-1.5 p-1.5">
+            <span class="sr-only">OS2ATC</span>
+            <img class="h-8 w-auto" src="https://os2atc-1304601764.cos.ap-beijing.myqcloud.com/img/logo.png" alt="">
+          </a>
+          <button id="mobile-menu-close-icon" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+            <span class="sr-only">Close menu</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="mt-6 flow-root">
+          <div class="-my-6 divide-y divide-gray-500/10">
+            <div class="space-y-2 py-6">
+              <div class="-mx-3">
+                <button type="button" class="flex w-full items-center justify-between rounded-full py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="false">
+                  我要参会
+                  <!--
+                    Expand/collapse icon, toggle classes based on menu open state.
+
+                    Open: "rotate-180", Closed: ""
+                  -->
+                  <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+                <!-- 'Product' sub-menu, show/hide based on menu state. -->
+                <div class="mt-2 space-y-2" id="disclosure-1">
+                  <a href="https://www.huodongxing.com/event/7737808971000?td=8985099715599" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">OS2ATC 2024</a>
+                  <a href="./conference.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 bg-gray-50">往期回顾</a>
+                </div>
+              </div>
+              <a href="./award.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">开源创新先锋奖</a>
+              <div class="-mx-3">
+                <button type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="false">
+                  资源中心
+                  <!--
+                    Expand/collapse icon, toggle classes based on menu open state.
+
+                    Open: "rotate-180", Closed: ""
+                  -->
+                  <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                  </svg>
+                </button>
+                <!-- 'Product' sub-menu, show/hide based on menu state. -->
+                <div class="mt-2 space-y-2" id="disclosure-1">
+                  <a href="https://cloud.tsinghua.edu.cn/d/8e6c77ad1ad548acb909/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">PPT下载</a>
+                  <a href="https://space.bilibili.com/503707556" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">视频回顾</a>
+                </div>
+              </div>
+              <a href="./contact.html" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">联系我们</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="">
+    <section class="bg-white dark:bg-gray-900">
+      <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+          <div class="mx-auto max-w-screen-xl text-center lg:mb-16 mb-8">
+              <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">开源操作系统年度技术会议（OS2ATC）往期回顾</h2>
+              <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">2013 - 2023</p>
+          </div>
+          <div class="grid gap-8 lg:grid-cols-2">
+
+            <article class="p-2 md:p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+              <div class="flex justify-between items-center mb-5 text-gray-500">
+                <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                  <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
+                  北京市海淀区西郊宾馆1号楼
+                </span>
+                <span class="text-sm">2023年3月26日</span>
+              </div>
+              <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">第十届开源操作系统年度技术会议</a></h2>
+              <p class="font-light text-gray-500 dark:text-gray-400">
+                <a href="https://www.bagevent.com/event/7951632/p/513655" class="inline-flex justify-between items-center py-1 px-1 pr-4 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
+                  <span class="text-xs bg-purple-500 rounded-full text-white px-4 py-1.5 mr-3">议程安排</span> <span class="text-sm font-medium">https://www.bagevent.com/event/7951632/p/513655</span>
+                </a>
+              </p>
+              <p class="font-light text-gray-500 dark:text-gray-400">
+                <a href="https://live.csdn.net/room/Hansen666666/wIIp8dGq" class="inline-flex justify-between items-center py-1 px-1 pr-4 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
+                  <span class="text-xs bg-purple-500 rounded-full text-white px-4 py-1.5 mr-3">直播回放</span> <span class="text-sm font-medium">https://live.csdn.net/room/Hansen666666/wIIp8dGq</span>
+                </a>
+              </p>
+              <p class="font-light text-gray-500 dark:text-gray-400">
+                <a href="https://live.photoplus.cn/live/39662692" class="inline-flex justify-between items-center py-1 px-1 pr-4 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
+                  <span class="text-xs bg-purple-500 rounded-full text-white px-4 py-1.5 mr-3">现场图片</span> <span class="text-sm font-medium">https://live.photoplus.cn/live/39662692</span>
+                </a>
+              </p>
+            </article>
+            <article class="p-2 md:p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+              <div class="flex justify-between items-center mb-5 text-gray-500">
+                <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                  <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
+                  中国科学院软件研究所
+                </span>
+                <span class="text-sm">2021年12月26日</span>
+              </div>
+              <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">第九届开源操作系统年度技术会议</a></h2>
+              <p class="font-light text-gray-500 dark:text-gray-400">
+                <a href="https://www.bagevent.com/event/7946359" class="inline-flex justify-between items-center py-1 px-1 pr-4 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
+                  <span class="text-xs bg-purple-500 rounded-full text-white px-4 py-1.5 mr-3">议程安排</span> <span class="text-sm font-medium">https://www.bagevent.com/event/7946359</span>
+                </a>
+              </p>
+              <p class="font-light text-gray-500 dark:text-gray-400">
+                <a href="https://live.csdn.net/room/csdnnews/RH4YIjic" class="inline-flex justify-between items-center py-1 px-1 pr-4 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
+                  <span class="text-xs bg-purple-500 rounded-full text-white px-4 py-1.5 mr-3">直播回放</span> <span class="text-sm font-medium">https://live.csdn.net/room/csdnnews/RH4YIjic</span>
+                </a>
+              </p>
+              <p class="font-light text-gray-500 dark:text-gray-400">
+                <a href="https://live.photoplus.cn/live/24495645" class="inline-flex justify-between items-center py-1 px-1 pr-4 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
+                  <span class="text-xs bg-purple-500 rounded-full text-white px-4 py-1.5 mr-3">现场图片</span> <span class="text-sm font-medium">https://live.photoplus.cn/live/24495645</span>
+                </a>
+              </p>
+            </article>
+            <article class="p-2 md:p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+              <div class="flex justify-between items-center mb-5 text-gray-500">
+                <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                  <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
+                  中国科学院计算研究所
+                </span>
+                <span class="text-sm">2020年12月27日</span>
+              </div>
+              <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">第八届开源操作系统年度技术会议</a></h2>
+              <p class="font-light text-gray-500 dark:text-gray-400">
+                <a href="https://www.bagevent.com/event/7009160" class="inline-flex justify-between items-center py-1 px-1 pr-4 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
+                  <span class="text-xs bg-purple-500 rounded-full text-white px-4 py-1.5 mr-3">议程安排</span> <span class="text-sm font-medium">https://www.bagevent.com/event/7009160</span>
+                </a>
+              </p>
+              <p class="font-light text-gray-500 dark:text-gray-400">
+                <a href="https://live.maodoulive.com/column/description/5magXFpijkmnRrqst" class="inline-flex justify-between items-center py-1 px-1 pr-4 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
+                  <span class="text-xs bg-purple-500 rounded-full text-white px-4 py-1.5 mr-3">直播回放</span> <span class="text-sm font-medium">https://live.maodoulive.com/column/des...</span>
+                </a>
+              </p>
+            </article>
+
+            <article class="p-2 md:p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+              <div class="flex justify-between items-center mb-5 text-gray-500">
+                <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                  <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
+                  深圳鹏城实验室
+                </span>
+                <span class="text-sm">2019年12月14日</span>
+              </div>
+              <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">第七届开源操作系统年度技术会议</a></h2>
+              <p class="font-light text-gray-500 dark:text-gray-400">
+                <a href="https://bss.csdn.net/m/topic/os2atc" class="inline-flex justify-between items-center py-1 px-1 pr-4 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
+                  <span class="text-xs bg-purple-500 rounded-full text-white px-4 py-1.5 mr-3">议程安排</span> <span class="text-sm font-medium">https://bss.csdn.net/m/topic/os2atc</span>
+                </a>
+              </p>
+              <p class="font-light text-gray-500 dark:text-gray-400">
+                <a href="https://live.maodoulive.com/column/description/5ffFZFxCp6xBsCbmq" class="inline-flex justify-between items-center py-1 px-1 pr-4 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
+                  <span class="text-xs bg-purple-500 rounded-full text-white px-4 py-1.5 mr-3">直播回放</span> <span class="text-sm font-medium">https://live.maodoulive.com/column/des...</span>
+                </a>
+              </p>
+            </article>
+            <article class="p-2 md:p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+              <div class="flex justify-between items-center mb-5 text-gray-500">
+                <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                  <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
+                  浙江大学玉泉校区
+                </span>
+                <span class="text-sm">2018年12月16日</span>
+              </div>
+              <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">第六届开源操作系统年度技术会议</a></h2>
+              <p class="font-light text-gray-500 dark:text-gray-400">
+                <a href="http://soft.cs.tsinghua.edu.cn/os2atc2018/" class="inline-flex justify-between items-center py-1 px-1 pr-4 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
+                  <span class="text-xs bg-purple-500 rounded-full text-white px-4 py-1.5 mr-3">议程安排</span> <span class="text-sm font-medium">http://soft.cs.tsinghua.edu.cn/os2atc2018/</span>
+                </a>
+              </p>
+            </article>
+            <article class="p-2 md:p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+              <div class="flex justify-between items-center mb-5 text-gray-500">
+                <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                  <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
+                  中国计算机学会
+                </span>
+                <span class="text-sm">2017年12月1日</span>
+              </div>
+              <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">第五届开源操作系统年度技术会议</a></h2>
+              <p class="font-light text-gray-500 dark:text-gray-400">
+                <a href="http://soft.cs.tsinghua.edu.cn/os2atc2017/" class="inline-flex justify-between items-center py-1 px-1 pr-4 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
+                  <span class="text-xs bg-purple-500 rounded-full text-white px-4 py-1.5 mr-3">议程安排</span> <span class="text-sm font-medium">http://soft.cs.tsinghua.edu.cn/os2atc2017/</span>
+                </a>
+              </p>
+            </article>
+            <article class="p-2 md:p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+              <div class="flex justify-between items-center mb-5 text-gray-500">
+                <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                  <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
+                  北京中国科学院大学
+                </span>
+                <span class="text-sm">2016年12月17日</span>
+              </div>
+              <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">第四届开源操作系统年度技术会议</a></h2>
+              <p class="font-light text-gray-500 dark:text-gray-400">
+                <a href="http://soft.cs.tsinghua.edu.cn/os2atc2016/" class="inline-flex justify-between items-center py-1 px-1 pr-4 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
+                  <span class="text-xs bg-purple-500 rounded-full text-white px-4 py-1.5 mr-3">议程安排</span> <span class="text-sm font-medium">http://soft.cs.tsinghua.edu.cn/os2atc2016/</span>
+                </a>
+              </p>
+            </article>
+            <article class="p-2 md:p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+              <div class="flex justify-between items-center mb-5 text-gray-500">
+                <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                  <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
+                  北京清华大学
+                </span>
+                <span class="text-sm">2015年11月28日</span>
+              </div>
+              <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">第三届开源操作系统年度技术会议</a></h2>
+              <p class="font-light text-gray-500 dark:text-gray-400">
+                <a href="http://soft.cs.tsinghua.edu.cn/os2atc2015/" class="inline-flex justify-between items-center py-1 px-1 pr-4 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
+                  <span class="text-xs bg-purple-500 rounded-full text-white px-4 py-1.5 mr-3">议程安排</span> <span class="text-sm font-medium">http://soft.cs.tsinghua.edu.cn/os2atc2015/</span>
+                </a>
+              </p>
+            </article>
+            <article class="p-2 md:p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+              <div class="flex justify-between items-center mb-5 text-gray-500">
+                <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                  <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
+                  北京清华大学
+                </span>
+                <span class="text-sm">2014年10月17日</span>
+              </div>
+              <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">第二届开源操作系统年度技术会议</a></h2>
+              <p class="font-light text-gray-500 dark:text-gray-400">
+                <a href="http://soft.cs.tsinghua.edu.cn/os2atc2014/" class="inline-flex justify-between items-center py-1 px-1 pr-4 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
+                  <span class="text-xs bg-purple-500 rounded-full text-white px-4 py-1.5 mr-3">议程安排</span> <span class="text-sm font-medium">http://soft.cs.tsinghua.edu.cn/os2atc2014/</span>
+                </a>
+              </p>
+            </article>
+            <article class="p-2 md:p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                <div class="flex justify-between items-center mb-5 text-gray-500">
+                    <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                        <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
+                        北京清华大学
+                    </span>
+                    <span class="text-sm">2013年</span>
+                </div>
+                <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">第一届开源操作系统年度技术会议</a></h2>
+            </article>
+            <article class="p-2 md:p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                  <div class="flex justify-between items-center mb-5 text-gray-500">
+                      <span class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                      </span>
+                      <span class="text-sm"></span>
+                  </div>
+                  <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">开源操作系统社区</a></h2>
+                  <p class="font-light text-gray-500 dark:text-gray-400">
+                    <a href="https://os2edu.cn/" class="inline-flex justify-between items-center py-1 px-1 pr-4 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
+                      <span class="text-xs bg-purple-500 rounded-full text-white px-4 py-1.5 mr-3">OS2EDU 学习社区</span> <span class="text-sm font-medium">https://os2edu.cn/</span>
+                    </a>
+                  </p>
+            </article>
+          </div>
+      </div>
+    </section>
+  </main>
+  <footer class="p-4 bg-slate-200 text-gray-500 md:p-8 lg:p-10">
+    <div class="mx-auto max-w-screen-xl text-center">
+        <img class="h-36 w-auto inline-block" src="https://os2atc-1304601764.cos.ap-beijing.myqcloud.com/img/qrcode/os2atc-qrcode-1280x1280.jpg" alt="" />
+        <p class="my-6">扫码关注我们的微信公众号</p>
+        <div class="relative flex py-5 items-center">
+          <div class="flex-grow border-t border-gray-300"></div>
+          <span class="flex-shrink mx-4 text-gray-300"><img class="h-8 w-auto inline-block" src="https://os2atc-1304601764.cos.ap-beijing.myqcloud.com/img/logo.png" alt=""></span>
+          <div class="flex-grow border-t border-gray-300"></div>
+        </div>
+        <span class="text-sm text-slate-400 sm:text-center">© 2023-2024 OS2ATC. All Rights Reserved. <a href="https://beian.miit.gov.cn/">京ICP备16045052号-11</a></span>
+    </div>
+  </footer>
+</body>
+<script src="./script/main.js"></script>
+</html>
