@@ -810,6 +810,10 @@ video {
   max-width: 56rem;
 }
 
+.max-w-64 {
+  max-width: 16rem;
+}
+
 .max-w-7xl {
   max-width: 80rem;
 }
@@ -921,6 +925,12 @@ video {
 
 .overflow-y-auto {
   overflow-y: auto;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .whitespace-nowrap {
@@ -1571,6 +1581,10 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:max-w-72 {
+    max-width: 18rem;
+  }
+
   .sm\:max-w-sm {
     max-width: 24rem;
   }
@@ -1632,6 +1646,10 @@ video {
 
   .md\:h-12 {
     height: 3rem;
+  }
+
+  .md\:max-w-96 {
+    max-width: 24rem;
   }
 
   .md\:grid-cols-12 {
