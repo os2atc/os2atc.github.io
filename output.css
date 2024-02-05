@@ -806,12 +806,12 @@ video {
   max-width: 10rem;
 }
 
-.max-w-4xl {
-  max-width: 56rem;
+.max-w-44 {
+  max-width: 11rem;
 }
 
-.max-w-64 {
-  max-width: 16rem;
+.max-w-4xl {
+  max-width: 56rem;
 }
 
 .max-w-7xl {
@@ -1581,8 +1581,8 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:max-w-72 {
-    max-width: 18rem;
+  .sm\:max-w-56 {
+    max-width: 14rem;
   }
 
   .sm\:max-w-sm {
