@@ -1393,6 +1393,11 @@
       grid-column: span 2 / span 2;
     }
   }
+  .md\:col-start-0 {
+    @media (width >= 48rem) {
+      grid-column-start: 0;
+    }
+  }
   .md\:col-start-2 {
     @media (width >= 48rem) {
       grid-column-start: 2;
