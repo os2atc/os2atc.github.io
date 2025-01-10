@@ -1,4 +1,4 @@
-/*! tailwindcss v4.0.0-beta.8 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.0.0-beta.9 | MIT License | https://tailwindcss.com */
 @layer theme, base, components, utilities;
 @layer theme {
   :root {
@@ -586,6 +586,9 @@
   .-m-2\.5 {
     margin: calc(var(--spacing) * -2.5);
   }
+  .m-7 {
+    margin: calc(var(--spacing) * 7);
+  }
   .-mx-3 {
     margin-inline: calc(var(--spacing) * -3);
   }
@@ -718,6 +721,9 @@
   }
   .w-6 {
     width: calc(var(--spacing) * 6);
+  }
+  .w-9 {
+    width: calc(var(--spacing) * 9);
   }
   .w-auto {
     width: auto;
@@ -900,9 +906,6 @@
   }
   .bg-purple-500 {
     background-color: var(--color-purple-500);
-  }
-  .bg-purple-600 {
-    background-color: var(--color-purple-600);
   }
   .bg-purple-700 {
     background-color: var(--color-purple-700);
@@ -1396,11 +1399,6 @@
   .md\:col-start-0 {
     @media (width >= 48rem) {
       grid-column-start: 0;
-    }
-  }
-  .md\:col-start-2 {
-    @media (width >= 48rem) {
-      grid-column-start: 2;
     }
   }
   .md\:mb-8 {
