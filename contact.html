@@ -17,6 +17,7 @@
           <span class="sr-only">OS2ATC</span>
           <img class="h-8 md:h-12 w-auto" src="https://os2atc-1304601764.cos.ap-beijing.myqcloud.com/img/logo-all.png" alt="">
         </a>
+        <div id="google_translate_element" class="ml-6 -mt-5 h-8"></div>
       </div>
       <div class="flex lg:hidden">
         <button id="mobile-menu-icon" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
@@ -224,4 +225,17 @@
   </footer>
 </body>
 <script src="./script/main.js"></script>
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'zh-CN',          // 原始页面语言：中文（简体）
+      includedLanguages: 'zh-CN,en',  // 只显示中文和英文
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false
+    }, 'google_translate_element');
+  }
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
 </html>
